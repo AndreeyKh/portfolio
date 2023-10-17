@@ -1,0 +1,62 @@
+.works
+	min-height: 725px
+	&__title
+		background-color: $second-color
+		width: 120px
+		padding: 0 10px 0 10px
+		margin: 0 auto
+	&__section
+		margin-top: 30px
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		grid-template-rows: repeat(2, 1fr)
+		gap: 5px
+		.grid-element1
+			grid-column: 1/2
+			grid-row: 1/2
+		.grid-element2
+			grid-column: 2/3
+			grid-row: 1/2
+		.grid-element3
+			grid-column: 3/4
+			grid-row: 1/2
+		.grid-element4
+			grid-column: 1/2
+			grid-row: 2/3
+		.grid-element5
+			grid-column: 2/4
+			grid-row: 2/3
+			img
+				width: 565px
+		.grid-element6
+			grid-column: 4/5
+			grid-row: 1/3
+			background-color: $third-color
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			&__text
+				font-weight: bold
+				font-size: 1.6rem
+				color: rgb(85, 82, 124)
+				margin-bottom: 20px
+			&__button
+				background-color: rgb(19, 15, 73)
+				color: rgb(255, 255, 255)
+				border: none
+				border-radius: 0.75rem
+				width: 150px
+				height: 45px
+				font-weight: 300
+				&:hover
+					background-color: black
+		
+		.grid-img
+			width: 280px
+			object-fit: cover
+			height: 100%
+			transition: 0.6s all ease
+			&:hover
+				filter: blur(1.5px)
+				transform: scale(1.03)

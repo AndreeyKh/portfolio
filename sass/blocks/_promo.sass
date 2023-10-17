@@ -1,0 +1,59 @@
+.logo
+	width: 450px
+
+.introduction
+	height: 100vh
+	background: url(../img/main_bg.jpg) center (center/cover) no-repeat
+	padding-top: 150px
+	position: relative
+	&__title
+		font-weight: 700
+		font-size: 48px
+		line-height: 60px
+		color: $main-color
+		width: 535px
+		margin-bottom: 0
+	&__buttons
+		display: flex
+		width: 270px
+		justify-content: center
+		margin-top: 25px
+		height: 45px
+		text-decoration: none
+		&_main-btn
+			width: 135px
+			background-color: $second-color
+			border: none
+			transition: 0.6s all ease
+			border-radius: 0.75rem
+			&:hover
+				background-color: $third-color
+		&_sec-btn
+			width: 135px
+			background: none
+			border: none
+	
+.social
+	position: fixed
+	top: 50%
+	transform: translateY(-50%)
+	left: 25px
+	display: flex
+	flex-direction: column
+	justify-content: space-evenly
+	align-items: center
+	height: 340px
+	&__link__divider
+		height: 70px
+		width: 2px
+		background-color: black
+		background-color: black
+	&__link__text
+		height: 150px
+		width: 25px
+		span
+			transform: rotate(-90deg) translate(-22%,-179%)
+			display: block
+			width: 110px
+
+
